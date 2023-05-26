@@ -7,17 +7,25 @@ class Calc:
     def add(self, a, b):
         return np.add(a, b)
 
-    def subtract(self,a,b):
+    def subtract(self, a, b):
         return np.subtract(a, b)
 
-    def multiply(self,a,b):
-        return np.multiply(a,b)
+    def multiply(self, a, b):
+        return np.multiply(a, b)
 
-    def divide(self,a,b):
-        return np.divide(a,b)
+    def divide(self, a, b):
+        return np.divide(a, b)
 
-    def sqrt(self,a):
+    def sqrt(self, a):
         return np.sqrt(a)
+
+    def power(self, a, b):
+        return np.power(a, b)
+
+    def log(self, a):
+        return np.log(a)
+
+
 
 
 
@@ -44,6 +52,7 @@ class TestCalc:
         assert calc.divide(2,4) == 0.5
         assert np.all(calc.divide(np.array([[4, 10, 25], [30,9,6]]),
                                    np.array([[2, 2, 5], [5 ,3 , 2]])) == np.array([2, 5, 5], [6,3,3]))
+
 
 
 
