@@ -34,7 +34,7 @@ class Calc:
 
 calc = Calc()
 class TestCalc:
-    
+
 
     @pytest.mark.parametrize(
         "x,y,results",
